@@ -33,13 +33,13 @@ switch ( $action ) {
 
 function login() {
   $results = array();
-  $results['pageTitle'] = "Admin Login";
+  $results['pageTitle'] = "archCMS";
   if ( isset( $_POST['login'] ) ) {
     if ( $_POST['username'] == ADMIN_USERNAME && $_POST['password'] == ADMIN_PASSWORD ) {
       $_SESSION['username'] = ADMIN_USERNAME;
       header( "Location: admin.php" );
     } else {
-      $results['errorMessage'] = "Incorrect username or password. Please try again.";
+      $results['errorMessage'] = "Access denied: incorrect details.";
       require( TEMPLATE_PATH . "/admin/loginForm.php" );
     }
   } else {
@@ -106,11 +106,11 @@ function listArticles() {
   $results['totalRows'] = $data['totalRows'];
   $results['pageTitle'] = "All Articles";
   if ( isset( $_GET['error'] ) ) {
-    if ( $_GET['error'] == "articleNotFound" ) $results['errorMessage'] = "Error: Article not found.";
+    if ( $_GET['error'] == "articleNotFound" ) $results['errorMessage'] = "Error: That post cannot be found.";
   }
   if ( isset( $_GET['status'] ) ) {
     if ( $_GET['status'] == "changesSaved" ) $results['statusMessage'] = "Your changes have been saved.";
-    if ( $_GET['status'] == "articleDeleted" ) $results['statusMessage'] = "Article deleted.";
+    if ( $_GET['status'] == "articleDeleted" ) $results['statusMessage'] = "That post has been deleted.";
   }
   require( TEMPLATE_PATH . "/admin/listArticles.php" );
 }

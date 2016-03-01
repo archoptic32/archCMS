@@ -17,7 +17,7 @@ function archive() {
   $data = Article::getList();
   $results['articles'] = $data['results'];
   $results['totalRows'] = $data['totalRows'];
-  $results['pageTitle'] = "bloggrPro";
+  $results['pageTitle'] = "archCMS";
   require( TEMPLATE_PATH . "/archive.php" );
 }
 
@@ -28,7 +28,7 @@ function viewArticle() {
   }
   $results = array();
   $results['article'] = Article::getById( (int)$_GET["articleId"] );
-  $results['pageTitle'] = $results['article']->title . " | bloggrPro";
+  $results['pageTitle'] = $results['article']->title . " | archCMS";
   require( TEMPLATE_PATH . "/viewArticle.php" );
 }
 
@@ -37,7 +37,7 @@ function homepage() {
   $data = Article::getList( HOMEPAGE_NUM_ARTICLES );
   $results['articles'] = $data['results'];
   $results['totalRows'] = $data['totalRows'];
-  $results['pageTitle'] = "bloggrPro";
+  $results['pageTitle'] = "archCMS";
   require( TEMPLATE_PATH . "/homepage.php" );
 }
 

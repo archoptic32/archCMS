@@ -1,1 +1,1 @@
-Welcome to BloggrPro - the all-new Blogging CMS with Bootstrap built in - featuring themes from <a href="https://bootswatch.com">Bootswatch</a> and unique page designs from our DTech Web Designers, your blogging needs are sure to be satisfied!
+Welcome to ArchCMS - the all-new blogging CMS with Bootstrap and more built in!

@@ -1,1 +1,1 @@
-The Bootstrap CMS by DTech
+The Official Blogging CMS by Archoptics.
