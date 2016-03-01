@@ -1,0 +1,304 @@
+/*=================================================
+||				1. Imports 
+==================================================*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+body {
+    font-family: 'Roboto', 'Open-Sans', sans-serif;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+
+/*Owl Carousel*/
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 43%;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.owl-next {
+    right: -40px;
+}
+
+.owl-prev {
+    left: -40px;
+}
+
+.owl-prev:before {
+    content: "\f3d2";
+    font-family: 'ionicons';
+    /*color: #fff;*/
+}
+
+.owl-next:before {
+    content: "\f3d3";
+    font-family: "ionicons";
+    /*color: #fff;*/
+}
+
+.section-title {
+    color: #313131;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: #583b54;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-wrapper {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+p {
+    color: #969595;
+}
+
+.border-radius {
+    border-radius: 0 !important;
+    border-color: #60c9eb;
+    height: 45px;
+}
+
+p:hover {
+    cursor: default;
+}
+
+.navbar-toggle {
+    background-color: rgb(96, 201, 235);
+    border: 1px solid rgb(96, 201, 235);
+    border-radius: 0;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: rgb(96, 201, 235);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background: #fff;
+}
+
+.navbar-toggle:hover .icon-bar,
+.navbar-toggle:focus .icon-bar {
+    background-color: rgb(96, 201, 235);
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/*=================================================
+||				3. Header
+==================================================*/
+
+/*Home*/
+
+.flexslider {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    background: transparent;
+    background-image: url('../images/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-item {
+    background-size: inherit;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.inner-intro {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.intro {
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.header-title {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.header-title span {
+    font-weight: 700;
+}
+
+.header-sub-title {
+    font-size: 14px;
+    color: #fff;
+    margin: 20px auto 25px;
+}
+
+.custom-btn {
+    color: #7b1fa2;
+    background-color: transparent;
+    border-color: #18ffff;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all .4s ease-in-out;
+}
+
+.custom-btn:hover {
+    background: #fff;
+    color: #583b54;
+}
+
+
+/*=================================================
+||				4. Find a Tour
+==================================================*/
+
+.form-dropdown {
+    margin-top: -25px;
+}
+
+.custom-addon {
+    background: #fff;
+}
+
+.border-right {
+    border-right: 0px;
+}
+
+.custom-button {
+    background: #283593;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    transition: all .4s ease-in-out;
+}
+
+.custom-button:hover {
+    background: #53B1DE;
+    border-color: #53B1DE;
+    color: #fff;
+}
+
+.tour .input-group {
+    margin-bottom: 22px;
+}
+
+
+/*=================================================
+||				5. Our Blazzing offers
+==================================================*/
+
+.offer {
+    color: black;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.offer-item {
+    background: #fff;
+    letter-spacing: 1px;
+    padding: 30px;
+    transition: all .7s ease-in;
+    margin: 10px 0px;
+}
+
+.icon {
+    padding: 20px 0;
+    font-size: 35px;
+    color: #283593;
+}
+
+.offer-item h3 {
+    padding-bottom: 40px;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.offer-item p {
+    padding-bottom: 20px;
+    font-size: 13px;
+    line-height: 170%;
+}
+
+.offer-item:hover {
+    box-shadow: 0 0 30px rgba(125, 125, 125, 0.1);
+}
+
+
+/*=================================================
+||				6. Top place to visit
+==================================================*/
+
+.visit-item {
+    padding: 0px 15px;
+    transition: all .4s ease-in-out;
+    opacity: .6;
+}
+
+.visit-item:hover {
+    opacity: 1;
+}
+
+.visit .owl-theme .owl-controls .owl-nav [class*=owl-] {
+    color: #283593;
+    font-size: 25px;
+}
+
+/*=================================================
+||				13. Media Query
+==================================================*/
+
+@media (max-width: 991px) {
+    .offer-cta {
+        background: url("../images/cta-1.png") bottom left no-repeat;
+    }
+    .offering {
+        padding-bottom: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-item {
+        background-image: none !important;
+    }
+    .slide {
+        height: auto;
+    }
+    .intro {
+        max-height: 627px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        font-weight: 400;
+    }
+    .navbar-default .navbar-brand {
+        padding-left: 15px;
+    }
+}

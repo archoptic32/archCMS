@@ -1,0 +1,12 @@
+body {
+    /* UNCOMMENT FOR A BACKGROUND COLOR */
+    /* background-color: #009dff; */
+    
+    /* UNCOMMENT THE FOUR LINES BELOW FOR A STRETCH-TO-FIT BACKGROUND IMAGE. */
+    /* Change image.png to your image name - put it in the same folder as the CSS files. */
+    
+    background-image: url(image.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
